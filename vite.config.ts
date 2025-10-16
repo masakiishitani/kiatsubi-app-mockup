@@ -9,6 +9,7 @@ import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/kiatsubi-app-mockup/' : '/',
   plugins,
   resolve: {
     alias: {
