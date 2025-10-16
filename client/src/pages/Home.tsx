@@ -15,14 +15,12 @@ export default function Home() {
       <main className="flex-1 flex flex-col items-center justify-center px-6 pb-12">
         <div className="max-w-md w-full space-y-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-4" style={{ color: "#9C27B0" }}>
-              体調を記録して
-              <br />
-              パターンを見つけよう
-            </h2>
-            <p className="text-gray-700 mb-8">
-              気圧病の複合症状を記録し、あなた自身の体調パターンを分析します。
-            </p>
+	            <h2 className="text-3xl font-bold mb-4" style={{ color: "#9C27B0" }}>
+	              気圧病の備忘録アプリ
+	            </h2>
+	            <p className="text-gray-700 mb-8">
+	              **ワンタップで自分の状態を記録**し、気圧データと突き合わせることで、あなただけの体調の傾向（パターン）を見つけます。
+	            </p>
           </div>
 
           {/* Quick Record Button */}

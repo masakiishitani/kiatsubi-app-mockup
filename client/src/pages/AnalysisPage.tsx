@@ -98,10 +98,10 @@ export default function AnalysisPage() {
           {/* Correlation Graph */}
           <div className="bg-white p-6 rounded-lg shadow">
             <h2 className="text-lg font-bold mb-4" style={{ color: "#9C27B0" }}>
-              複合相関グラフ
+              複合相関分析 & 予測
             </h2>
-            <p className="text-sm text-gray-600 mb-4">
-              気圧変化率 vs 頭痛強度
+            <p className="text-gray-700 mt-2 mb-4">
+              記録がたまったら、気圧予報と突き合わせて**体調の予測や予告**を出すことができるようになります。
             </p>
             {/* Placeholder for correlation graph */}
             <div className="h-48 bg-gradient-to-br from-purple-50 to-pink-50 rounded flex items-center justify-center">
@@ -111,8 +111,18 @@ export default function AnalysisPage() {
             </div>
           </div>
 
-          {/* Personalized Insights */}
-          <div className="bg-white p-6 rounded-lg shadow">
+	          {/* AI BOT Consultation Button */}
+	          <Link href="/chat">
+	            <Button
+	              className="w-full py-4 text-lg font-bold"
+	              style={{ background: "#EC407A", color: "white" }}
+	            >
+	              AI体調BOTに相談する
+	            </Button>
+	          </Link>
+
+	          {/* Personalized Insights */}
+	          <div className="bg-white p-6 rounded-lg shadow">
             <h2 className="text-lg font-bold mb-4" style={{ color: "#9C27B0" }}>
               パーソナライズされたインサイト
             </h2>
